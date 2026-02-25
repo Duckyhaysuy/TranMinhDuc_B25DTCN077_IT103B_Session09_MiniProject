@@ -36,7 +36,7 @@ do{
 }while(choice !==7);
 
 function filterProducts(){
-    let premiumProducts = iphoneList.filter((_, index) => price[index] > 500);
+    let premiumProducts = iphoneList.filter((element, index) => price[index] > 500);
     alert(`Sản phẩm có giá trị trên 500: ${premiumProducts.join(", ")}`);
     console.log(`Sản phẩm có giá trị trên 500: ${premiumProducts.join(", ")}`);
     
@@ -78,4 +78,5 @@ function reportStock(){
     let report = iphoneList.map((product, index) => `${product}: ${stock[index]} chiếc`);
     alert(`Báo cáo tình trạng tồn kho:\n${report.join("\n")}`);
     console.log(`Báo cáo tình trạng tồn kho:\n${report.join("\n")}`);
+
 } 
